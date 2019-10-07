@@ -1,5 +1,5 @@
 .todo-item {
-  background-color: #75C9C8;
+  background-color: #F6F7EB;
 
   padding: 5px 10px;
   margin-bottom: 5px;
@@ -24,10 +24,28 @@
     font-size: 10pt;
     text-align: right;
   }
+
+  .due-date {
+    font-size: 10pt;
+    text-align: left;
+    color: #333333;
+  }
+
+  .due-date.attention {
+    color: #E94F37;
+  }
 }
 
 .todo-item:hover {
   transition: background-color 0.1s;
 
-  background-color: #DED9E2;
+  background-color: #F6F7EB;
+}
+
+.todo-item.expired {
+  background-color: #E94F37;
+}
+
+.todo-item.complete {
+  background-color: #44BBA4;
 }
